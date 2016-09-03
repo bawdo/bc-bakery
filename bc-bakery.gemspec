@@ -1,10 +1,10 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'BcBakery/version'
+require 'bc-bakery/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "BcBakery"
+  spec.name          = "bc-bakery"
   spec.version       = BcBakery::VERSION
   spec.authors       = ["Keith Bawden"]
   spec.email         = ["keith@bawdo.com"]

@@ -1,4 +1,4 @@
-require 'BcBakery'
+require 'bc-bakery'
 require 'minitest'
 require 'minitest/unit'
 require 'minitest/autorun'
