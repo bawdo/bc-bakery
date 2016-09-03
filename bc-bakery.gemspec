@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "bc-bakery"
   spec.version       = BcBakery::VERSION
   spec.authors       = ["Keith Bawden"]
-  spec.email         = ["keith@bawdo.com"]
+  spec.email         = ["keith+bc-bakery@bawdo.com"]
 
   spec.summary       = %q{Not a real gem - helping a bakery sell products in bundles}
   spec.homepage      = "https://github.com/bawdo/bc-bakery"
@@ -29,4 +29,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "minitest", "~> 5.9.0"
+  spec.add_development_dependency "simplecov", "~> 0.12.0"
 end

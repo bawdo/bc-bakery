@@ -1,10 +1,16 @@
 require "bundler/gem_tasks"
 require 'rake/testtask'
 
+desc "Run all tests"
 Rake::TestTask.new do |t|
   t.libs << 'test'
   t.pattern = "test/*_test.rb"
 end
-desc "Run all tests"
 
 task default: :test
+
+desc 'Generates a coverage report'
+task :coverage do
+    ENV['COVERAGE'] = 'true'
+    Rake::Task['test'].execute
+end
