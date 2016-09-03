@@ -2,7 +2,6 @@ require 'test_helper'
 
 class ProductTest < Minitest::Test
   def setup
- #   @post = Mark::Post.new(File.expand_path('../fixtures/valid_post.md', __FILE__))
     @product = BcBakery::Product.new(code: 'VS5', name: 'Vegemite Scroll')
   end
 
@@ -12,5 +11,9 @@ class ProductTest < Minitest::Test
 
   def test_valid_code
     assert_equal 'VS5', @product.code
+  end
+
+  def test_packs_returns_array
+    assert_instance_of Array, @product.packs
   end
 end
