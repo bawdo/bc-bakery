@@ -4,8 +4,8 @@ module BcBakery
     attr_reader :packs
 
     def initialize(args)
-      @name  = args[:name]
-      @code  = args[:code]
+      @name  = args[:name] || raise(ArgumentError,":name is missing")
+      @code  = args[:code] || raise(ArgumentError,":code is missing")
       @packs = []
     end
 

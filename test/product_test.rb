@@ -23,4 +23,12 @@ class ProductTest < Minitest::Test
     assert_equal @product.packs.first.quantity, 3
     assert_equal @product.packs.first.price, 6.99
   end
+
+  def test_cannot_initialize_with_an_empty_name
+    assert_raises(ArgumentError) { BcBakery::Product.new(code: 'VS5') }
+  end
+
+  def test_cannot_initialize_with_an_empty_code
+    assert_raises(ArgumentError) { BcBakery::Product.new(name: 'Vegemite Scroll') }
+  end
 end
