@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/bawdo/bc-bakery.png)](https://travis-ci.org/bawdo/bc-bakery)
+
 # bc-bakery
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/bc-bakery`. To experiment with that code, run `bin/console` for an interactive prompt.
